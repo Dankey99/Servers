@@ -6,7 +6,7 @@ function doSomething(request,response){
     response.send("Hello my friends")
 }
 function manchester(request,response){
-    response.send("weather isn't bad")
+    response.send("Weather isn't bad")
 }
 
 server.get("/nbs",doSomething)
