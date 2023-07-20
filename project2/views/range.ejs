@@ -1,0 +1,15 @@
+<html>
+
+<h1>
+    <centre> You have selected:<%= number %>
+</h1>
+
+<%
+    for(let r=10;r<=100;r+=10){
+%>
+
+        <a href="/timestable/<%= r%>/<%= number %>"> <%= r %></a>
+        <br>
+<% } %>
+</centre>
+</html>
