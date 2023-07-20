@@ -1,0 +1,63 @@
+<html>
+<centre>
+<h1>Students Results</h1>
+</centre>
+<% 
+    let total = phy+chem+mth
+    let per = total*100/300
+    let result=""
+    if(per>=60){
+        result="You have Passed the exam"
+    } else{
+        result="You have Failed the exam"
+    }
+    %>
+<table border="1">
+    <tr>
+        <th>Firstname</th>
+        <td> <%= tname %> </td>
+    </tr>
+    <tr>
+        <th>Physics</th>
+        <td> <%= phy %> </td>
+    </tr>
+    <tr>
+        <th>Chemistry</th>
+        <td> <%= chem %> </td>
+    </tr>
+    <tr>
+        <th>Maths</th>
+        <td> <%= mth %> </td>
+    </tr>
+    <tr>
+        <th>Total Marks</th>
+        <td> <%= total %> </td>
+    </tr>
+    <tr>
+        <th>Percentage</th>
+        <td> <%= per %> </td>
+    </tr>
+    
+    
+    <%
+        if(per>=60){
+    %>
+    <tr bgcolor="green">
+        <th>Result</th>
+        <td> <%= result %> </td>
+    </tr>
+    <% } else{ %>
+
+    <tr bgcolor="red">
+        <th>Result</th>
+        <td> <%= result %> </td>
+    </tr>
+    <% } %>
+
+
+
+
+</table>
+
+
+</html>
