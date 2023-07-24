@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import SalarySlip from './SalarySlip';
+
+import Results from './Results';
 function App() {
   return (
     <>
@@ -11,8 +12,8 @@ function App() {
 
       </h1>
       <br/>
-      <SalarySlip name="Shafeeq" salary="28000"/>
-      <SalarySlip name="James Bond" salary="23000"/>
+      <Results name="Shafeeq" physics="60" chemistry="50" maths="55" Total="C" />
+      <Results name="Dan" physics="88" chemistry="58" maths="65" Total="C"/>
     
     </>
   );
