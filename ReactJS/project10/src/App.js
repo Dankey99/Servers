@@ -1,11 +1,12 @@
 import './App.css';
-import Data from './Data';
+
 function App() {
   return (
     <>
-     <Data/>
+    <h1> Welcome to Nationwide</h1>
+     
     
-    </>
+      </>
   );
 }
 
